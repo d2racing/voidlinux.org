@@ -76,9 +76,5 @@ efibootmgr -c -d "$BOOT_DISK" -p "$BOOT_PART" \
 echo "reconfigure all installed packages"
 xbps-reconfigure -fa
 xbps-install nano
-echo "end of baseinstall_part2.sh:"  
-#exit
-#umount -n -R /mnt
-#zpool export zroot
-#reboot
+echo "end of baseinstall_part2.sh"  
   
