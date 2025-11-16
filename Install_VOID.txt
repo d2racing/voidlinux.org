@@ -1,0 +1,45 @@
+# mkdir -p /mnt/scripts
+# cd /mnt/scripts
+# gitclone https://github.com/d2racing/voidlinux.org.git
+# cd /mnt/scripts/voidlinux.org
+# chmod +x *.sh
+# time ./void_baseinstall_part1.sh 
+
+# xchroot /mnt/
+
+# passwd root
+
+# mkdir -p /mnt/scripts
+# cd /mnt/scripts
+# gitclone https://github.com/d2racing/voidlinux.org.git
+# cd /mnt/scripts/voidlinux.org
+# chmod +x *.sh
+
+# time ./void_baseinstall_part2.sh
+
+# time ./void_baseinstall_part3.sh
+
+# exit
+# umount -n -R /mnt
+# zpool export zroot
+# reboot
+
+# root
+# mot de passe root
+
+# cd /mnt/scripts/voidlinux.org
+# time ./void_baseinstall_part4.sh
+
+# xbps-install -Syv xdg-user-dirs
+# su - void -c "xdg-user-dirs-update --force"
+
+# time ./void_baseinstall_part5.sh
+
+# password void
+
+# reboot
+
+$ login avec void
+$ startHyprland.sh
+
+
