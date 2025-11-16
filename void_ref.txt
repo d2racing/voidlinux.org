@@ -1,0 +1,40 @@
+
+https://support.tools/how-to-create-encrypted-zfs-pool/
+https://www.reddit.com/r/voidlinux/comments/c1tehg/void_linux_on_zfs_with_full_disk_luks_encryption/
+https://wiki.voidlinux.org/voidlinux_en_all_2021-04/A/Main_Page
+https://wiki.voidlinux.org/voidlinux_en_all_2021-04/A/Frequently_Asked_Questions
+https://gitlab.com/emacsomancer/full-zfs-and-full-luks-encryption-on-void-linux
+
+### Installation pour encryption complète ###
+https://docs.voidlinux.org/installation/guides/fde.html
+
+### Pour ajuster l*affichage ###
+
+echo 100 > /sys/class/backlight/amdgpu_bl0/brightness
+##ajouter paquets suivants:  parted gptfdisk
+
+https://forum.linuxos.ovh/d/187-installer-voidlinux
+
+
+##################################  Document utilisés pour installation ########################
+https://wiki.archlinux.org/title/Install_Arch_Linux_on_ZFS#Setup_the_ZFS_filesystem
+https://docs.voidlinux.org/installation/guides/zfs.html
+https://docs.zfsbootmenu.org/en/latest/general/native-encryption.html
+https://docs.zfsbootmenu.org/en/latest/general/bootenvs-and-you.html
+https://unixdigest.com/tutorials/void-linux-root-on-an-encrypted-zfs-mirror-with-syslinux-mbr-and-zfsbootmenu.html   (snapshot expliqué)
+https://github.com/nightah/void-install
+https://ociaw.com/posts/install-fedora-zfs-boot-menu
+https://www.reddit.com/r/voidlinux/comments/p11eq8/advice_about_zfs_and_zfsbootmenu/
+https://forums.lawrencesystems.com/t/booting-natively-encrypted-zfs/2759
+https://docs.zfsbootmenu.org/en/v2.3.x/general/native-encryption.html
+https://www.reddit.com/r/zfs/comments/xa0dgh/zfsbootmenu_passphrase_authentication_twice/
+################################################################################################
+
+#### grub peut booter sur un zfs encrypté si on garde les fichiers de boot non-encrypté
+https://github.com/openzfs/zfs/discussions/15169
+#####
+
+
+###########
+https://docs.zfsbootmenu.org/en/latest/guides/void-linux.html
+###########
