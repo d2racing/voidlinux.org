@@ -16,7 +16,7 @@ ln -s /var/lib/dbus/machine-id /etc/machine-id
 ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/pipewire.desktop
 
 xbps-install -Syv Waybar way-displays wayfire wayfire-plugins-extra wayland wayland-protocols wdisplays wlogout wlsunset wofi swayidle swaylock grim gammastep brightnessctl clipman dex elogind \
-flatpak alacritty mako
+flatpak alacritty mako hyprland
 
 # Les Thèmes,fontes,icones, bref: L'apparence
 
