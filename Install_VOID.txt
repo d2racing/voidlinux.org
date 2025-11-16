@@ -11,6 +11,7 @@
 
 # mkdir -p /mnt/scripts
 # cd /mnt/scripts
+# xbps-install -Syv git
 # gitclone https://github.com/d2racing/voidlinux.org.git
 # cd /mnt/scripts/voidlinux.org
 # chmod +x *.sh
