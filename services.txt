@@ -1,0 +1,3 @@
+[bt@avoidme dkms]$ ls /var/service
+acpid        agetty-tty2  agetty-tty4  agetty-tty6   bluetoothd  cups-browsed  dbus   dhcpcd  gdm  libvirtd  mdnsd           polkitd                sshd  udevd      virtlogd
+agetty-tty1  agetty-tty3  agetty-tty5  avahi-daemon  chronyd     cupsd         dcron  docker  gpm  locale1   NetworkManager  power-profiles-daemon  tlp   virtlockd
