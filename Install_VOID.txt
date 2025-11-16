@@ -1,6 +1,6 @@
 # mkdir -p /mnt/scripts
 # cd /mnt/scripts
-# gitclone https://github.com/d2racing/voidlinux.org.git
+# git clone https://github.com/d2racing/voidlinux.org.git
 # cd /mnt/scripts/voidlinux.org
 # chmod +x *.sh
 # time ./void_baseinstall_part1.sh 
@@ -12,7 +12,8 @@
 # mkdir -p /mnt/scripts
 # cd /mnt/scripts
 # xbps-install -Syv git
-# gitclone https://github.com/d2racing/voidlinux.org.git
+# xbps-install -Syv NetworkManager
+# git clone https://github.com/d2racing/voidlinux.org.git
 # cd /mnt/scripts/voidlinux.org
 # chmod +x *.sh
 
@@ -27,6 +28,7 @@
 
 # root
 # mot de passe root
+# /bin/bash
 
 # cd /mnt/scripts/voidlinux.org
 # time ./void_baseinstall_part4.sh
