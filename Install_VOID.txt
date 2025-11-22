@@ -33,6 +33,9 @@
 # cp resolv.conf /etc
 # time ./void_baseinstall_part4.sh
 
+# useradd -m -s /bin/bash void
+# passwd void
+# usermod -aG wheel,users,audio,video void
 # xbps-install -Syv xdg-user-dirs
 # su - void -c "xdg-user-dirs-update --force"
 
