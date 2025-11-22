@@ -31,7 +31,7 @@
 
 # cd /mnt/scripts/voidlinux.org
 # ln -s /etc/sv/dhcpcd /var/services
-# cp resolv.conf /etc
+# vsv 
 # time ./void_baseinstall_part4.sh
 
 # useradd -m -s /bin/bash void
