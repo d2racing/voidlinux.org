@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "start of void_baseinstall_part4"
 
-xbps-install -Syu sshd dbus NetworkManager chronyd cronie bluetoothd rtkit dhcpcd
+xbps-install -Syu sshd dbus chronyd cronie bluetoothd rtkit dhcpcd
 
 # Installation des Services
 
 ln -s /etc/sv/sshd /var/service/
 ln -s /etc/sv/dbus /var/service/
-ln -s /etc/sv/NetworkManager /var/service/
+# ln -s /etc/sv/NetworkManager /var/service/
 ln -s /etc/sv/chronyd /var/service/
 ln -s /etc/sv/cronie /var/service/
 ln -s /etc/sv/bluetoothd /var/service/
