@@ -40,6 +40,8 @@
 # su - void -c "xdg-user-dirs-update --force"
 
 # time ./void_baseinstall_part5.sh
+# time ./void_baseinstall_part6.sh
+# usermod -aG seatd void
 
 # reboot
 
