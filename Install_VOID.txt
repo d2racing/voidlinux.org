@@ -11,8 +11,7 @@
 
 # mkdir -p /mnt/scripts
 # cd /mnt/scripts
-# xbps-install -Syv git
-# xbps-install -Syv NetworkManager
+# xbps-install -Syv git dhcpcd vsv
 # git clone https://github.com/d2racing/voidlinux.org.git
 # cd /mnt/scripts/voidlinux.org
 # chmod +x *.sh
@@ -31,6 +30,7 @@
 # /bin/bash
 
 # cd /mnt/scripts/voidlinux.org
+# cp resolv.conf /etc
 # time ./void_baseinstall_part4.sh
 
 # xbps-install -Syv xdg-user-dirs
