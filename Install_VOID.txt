@@ -41,8 +41,6 @@
 
 # time ./void_baseinstall_part5.sh
 
-# password void
-
 # reboot
 
 $ login avec void
