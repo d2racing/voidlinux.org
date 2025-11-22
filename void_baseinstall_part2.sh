@@ -75,6 +75,6 @@ efibootmgr -c -d "$BOOT_DISK" -p "$BOOT_PART" \
   
 echo "reconfigure all installed packages"
 xbps-reconfigure -fa
-xbps-install nano
+xbps-install nano vsv
 echo "end of baseinstall_part2.sh"  
   
