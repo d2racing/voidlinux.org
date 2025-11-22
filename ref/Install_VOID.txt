@@ -1,7 +1,7 @@
 # mkdir -p /mnt/scripts
 # cd /mnt/scripts
 # git clone https://github.com/d2racing/voidlinux.org.git
-# cd /mnt/scripts/voidlinux.org
+# cd /mnt/scripts/voidlinux.org/install
 # chmod +x *.sh
 # time ./void_baseinstall_part1.sh 
 
@@ -13,7 +13,7 @@
 # cd /mnt/scripts
 # xbps-install -Syv git dhcpcd vsv
 # git clone https://github.com/d2racing/voidlinux.org.git
-# cd /mnt/scripts/voidlinux.org
+# cd /mnt/scripts/voidlinux.org/install
 # chmod +x *.sh
 
 # time ./void_baseinstall_part2.sh
@@ -29,7 +29,7 @@
 # mot de passe root
 # /bin/bash
 
-# cd /mnt/scripts/voidlinux.org
+# cd /mnt/scripts/voidlinux.org/install
 # ln -s /etc/sv/dhcpcd /var/services
 # vsv 
 # time ./void_baseinstall_part4.sh
@@ -42,7 +42,8 @@
 
 # time ./void_baseinstall_part5.sh
 # time ./void_baseinstall_part6.sh
-# usermod -aG seatd void
+# usermod -aG _seatd void
+# ln -s /etc/sv/elogind /var/service/
 
 # reboot
 
