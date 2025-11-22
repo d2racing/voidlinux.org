@@ -44,7 +44,7 @@ add_dracutmodules+=" zfs "
 omit_dracutmodules+=" btrfs "
 EOF
 
-xbps-install -S zfs
+xbps-install -Syv zfs
 
 zfs set org.zfsbootmenu:commandline="quiet" zroot/ROOT
 
@@ -57,13 +57,13 @@ EOF
 mkdir -p /boot/efi
 mount /boot/efi
 
-xbps-install -S curl
+xbps-install -Syv curl
 mkdir -p /boot/efi/EFI/ZBM
 curl -o /boot/efi/EFI/ZBM/VMLINUZ.EFI -L https://get.zfsbootmenu.org/efi
 cp /boot/efi/EFI/ZBM/VMLINUZ.EFI /boot/efi/EFI/ZBM/VMLINUZ-BACKUP.EFI
 
 
-xbps-install efibootmgr
+xbps-install -Syv efibootmgr
 
 efibootmgr -c -d "$BOOT_DISK" -p "$BOOT_PART" \
   -L "ZFSBootMenu (Backup)" \
@@ -75,6 +75,6 @@ efibootmgr -c -d "$BOOT_DISK" -p "$BOOT_PART" \
   
 echo "reconfigure all installed packages"
 xbps-reconfigure -fa
-xbps-install nano vsv
+xbps-install -Syv nano vsv
 echo "end of baseinstall_part2.sh"  
   
