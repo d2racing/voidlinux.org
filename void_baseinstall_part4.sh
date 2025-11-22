@@ -36,6 +36,6 @@ ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire
 ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
 
 xbps-install -Syu pavucontrol-qt playerctl pulseaudio pipewire alsa-pipewire wireplumber kanshi mpv mpv-mpris void-repo-multilib linux-firmware-amd mesa mesa-dri mesa-vdpau \
-mesa-vaapi mesa-vulkan-radeon libva libva-32bit libva-vdpau-driver mesa-demos glxinfo xf86-video-amdgpu
+mesa-vaapi mesa-vulkan-radeon libva libva-vdpau-driver mesa-demos glxinfo xf86-video-amdgpu
 
 echo "end of void_baseinstall_part4"
