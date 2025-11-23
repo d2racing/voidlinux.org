@@ -1,0 +1,72 @@
+* {
+    font-family: "Inter", "Noto Sans", sans-serif;
+    font-size: 14px;
+    color: #eaeaea;
+    border: none;
+}
+
+window#waybar {
+    background: rgba(30, 30, 30, 0.65);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    padding: 4px 12px;
+}
+
+/* Generic module styling */
+#workspaces button,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#battery {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    border-radius: 12px;
+    margin: 0 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+#workspaces button:hover,
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#battery:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 6px 10px;
+    color: #bdbdbd;
+}
+
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.20);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Battery low */
+#battery.critical {
+    background: rgba(255, 60, 60, 0.60);
+}
+
+/* CPU / Memory / Temp colors */
+#cpu {
+    color: #ffdd88;
+}
+
+#memory {
+    color: #88c0d0;
+}
+
+#temperature {
+    color: #e5a3a3;
+}
+
+/* Clock centered and clean */
+#clock {
+    color: #ffffff;
+}
