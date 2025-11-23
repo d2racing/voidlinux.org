@@ -1,0 +1,41 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "margin": "8 8 0 8",
+
+  "modules-left": ["clock"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["cpu", "memory", "temperature", "battery"],
+
+  "hyprland/workspaces": {
+    "on-click": "hyprctl dispatch workspace e+1",
+    "format": "{name}",
+    "all-outputs": true
+  },
+
+  "clock": {
+    "format": "{:%Y-%m-%d  %H:%M}"
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {percentage}%"
+  },
+
+  "temperature": {
+    "critical-threshold": 75,
+    "format": " {temperatureC}°C"
+  },
+
+  "battery": {
+    "full-at": 98,
+    "format": "  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-critical": "  {capacity}%",
+    "interval": 20
+  }
+}
