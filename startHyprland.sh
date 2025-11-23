@@ -19,5 +19,7 @@ export SDL_IM_MODULE=fcitx
 export GLFW_IM_MODULE=ibus
 
 # exec dbus-run-session -- hyprland
-seatd-launch Hyprland 
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP=Hyprland
+seatd-launch Hyprland
 exit
